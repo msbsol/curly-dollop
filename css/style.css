@@ -169,6 +169,31 @@
                     color: #71B100;
                     font-size: 1.8rem;
                 }
+                /* MObile Menu */
+                
+                .mobile-menu img {
+                    width: 5rem;
+                }
+                
+                @media (min-width: 768px) {
+                    .mobile-menu {
+                        display: none;
+                    }
+                }
+                
+                .navegacion:target {
+                    display: block;
+                }
+                
+                .navegacion {
+                    display: none;
+                }
+                
+                @media (min-width: 768px) {
+                    .navegacion {
+                        display: block;
+                    }
+                }
                 /* iconos nosotros */
                 
                 @media (min-width: 768px) {
@@ -399,12 +424,15 @@
                     }
                 }
                 /* Para Paginas Internas */
+                /* Nosotros */
                 
-                .contenido-nosotros {
-                    display: grid;
-                    grid-template-columns: repeat(2, 1fr);
-                    /* es lo mismo que hacer 50% y 50% */
-                    grid-column-gap: 2rem;
+                @media (min-width: 768px) {
+                    .contenido-nosotros {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        /* es lo mismo que hacer 50% y 50% */
+                        grid-column-gap: 2rem;
+                    }
                 }
                 
                 .texto-nosotros blockquote {
